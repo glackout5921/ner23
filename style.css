@@ -1,0 +1,23 @@
+
+
+.block{
+    padding: 50px;
+    max-width: 500px;
+   margin: opx auto; 
+}
+.h1{
+    color:brown;
+}
+.text
+{
+    color:orange;
+}
+
+.sss{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+}
+
+
