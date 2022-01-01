@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+   
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+
+  #Header{
+      width: 100%;
+      height: 200px;
+      object-fit: fill;
+
+  }
+.img{
+    width: 100%;
+    height: 100%;
+      object-fit: fill;
+  }
+  
+  .vk{
+    border-style: dotted;
+    font-size: 25px;
+  }
+  #Sidebar{
+      width: 17%;
+      height: 1200px;
+      background-color: white;
+      float: left;
+      margin-top: 15px;
+  }
+  #href{
+    width: 10%;
+    height: 10%;
+    margin-left: 25px ;
+   float: right;
+   margin-top:15px;
+  }
+  #Timer{
+      width: 80%;
+      height: 40%;
+      background-color: cyan;
+      float: left;
+      margin-left: 25px;
+      margin-top: 25px;
+  }
+ 
