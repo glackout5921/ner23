@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content="wight=device-width,initial-scale=1.0">
+	<title>ner23</title>
+	<link rel = "stylesheet" href="style/style.css">
+	<link rel = "icon" href="favicon.ico" type="images/x-icon">
+	<script src = "js/script.js">
+	
+		</script>
+	</head>
+	 <body style="background-image: url(content/image/background.png) ;width: auto;height: auto;">
+		
+		<div id="Header">
+		<img class="img" src="content/image/header.png" alt=""></div>
+				<div id="href">
+				<a href="https://vk.com/ner23.official"  target="blank"  class="vk" style="background-image: url(content/icon/vk.png);">VK</a>
+				<a href="myGame.html" target="blank" class="vk" style="background-image: url(content/icon/vk.png);">Game</a>
+				</div>
+		<div id="Sidebar">
+			<img src="content/image/ad.png" alt="">
+		</div>
+		<div></div>
+	<div id="Timer" style="background-image: url(content/image/timer.png);" >
+		<p style="color: white;font-size: 60px;">До нового видео:</p>
+		<p id="timer" style="color: white;font-size: 30px;"></p>
+	</div>
+	<div id="footer" ></div>
+
+	<script>
+	function timer() {
+    var nowDate = new Date();
+	//                       (год,месяц,день,секунды, дальше хз)
+    var achiveDate = new Date(2022,0,3,17,0,0); //Задаем дату, к которой будет осуществляться обратный отсчет
+    var result = (achiveDate - nowDate)+1000;
+    if (result < 0) {
+        var elmnt = document.getElementById('timer');
+        elmnt.innerHTML = (' - : - - : - - : - - ');
+        return undefined;
+    }
+    var seconds = Math.floor((result/1000)%60);
+    var minutes = Math.floor((result/1000/60)%60);
+    var hours = Math.floor((result/1000/60/60)%24);
+    var days = Math.floor(result/1000/60/60/24);
+    if (seconds < 10) seconds = '0' + seconds;
+    if (minutes < 10) minutes = '0' + minutes;
+    if (hours < 10) hours = '0' + hours;
+    var elmnt = document.getElementById('timer');
+    elmnt.innerHTML = days + ':' + hours + ':' + minutes + ':' + seconds;
+    setTimeout(timer, 1000);
+}
+window.onload = function() {
+    timer();
+}
+	</script>
+	
+	
+	</body>
+</html>
